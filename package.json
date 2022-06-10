@@ -1,8 +1,8 @@
 {
-  "name": "@uniswap/widgets",
+  "name": "@doughnutswap/widgets",
   "version": "1.0.7",
-  "description": "Uniswap Interface",
-  "homepage": "https://shibainuni.github.io/donut",
+  "description": "Doughnutswap Interface",
+  "homepage": "https://app.doughnutswap.shop/",
   "files": [
     "dist"
   ],

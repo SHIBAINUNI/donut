@@ -1,7 +1,14 @@
+"scripts": 
+ {"fix-ts": "tslint-auto-fix"
+ }
+import doughLogoUrl from 'assets/images/token-logo.png'
 import ethereumLogoUrl from 'assets/images/ethereum-logo.png'
 import arbitrumLogoUrl from 'assets/svg/arbitrum_logo.svg'
 import optimismLogoUrl from 'assets/svg/optimistic_ethereum.svg'
 import polygonMaticLogo from 'assets/svg/polygon-matic-logo.svg'
+import thundercoreLogoUrl from 'assets/images/thundercore-logo.png'
+import harmonyLogoUrl from 'assets/images/harmony_logo.svg'
+import binanceLogoUrl from 'assets/images/binance_ethereum.svg'
 import ms from 'ms.macro'
 
 import { SupportedChainId, SupportedL1ChainId, SupportedL2ChainId } from './chains'
@@ -50,7 +57,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     networkType: NetworkType.L1,
     docs: 'https://docs.uniswap.org/',
     explorer: 'https://etherscan.io/',
-    infoLink: 'https://info.uniswap.org/#/',
+    infoLink: 'https://info.doughnutswap.shop/#/',
     label: 'Ethereum',
     logoUrl: ethereumLogoUrl,
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
@@ -102,7 +109,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     label: 'Optimism',
     logoUrl: optimismLogoUrl,
     statusPage: 'https://optimism.io/status',
-    helpCenterUrl: 'https://help.uniswap.org/en/collections/3137778-uniswap-on-optimistic-ethereum-oξ',
+    helpCenterUrl: 'https://help.doughnutswap.shop/en/collections/3137778-doughnutswap-on-optimistic-ethereum-oξ',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   },
   [SupportedChainId.OPTIMISTIC_KOVAN]: {
@@ -116,7 +123,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     label: 'Optimistic Kovan',
     logoUrl: optimismLogoUrl,
     statusPage: 'https://optimism.io/status',
-    helpCenterUrl: 'https://help.uniswap.org/en/collections/3137778-uniswap-on-optimistic-ethereum-oξ',
+    helpCenterUrl: 'https://help.doughnutswap.shop/en/collections/3137778-doughnutswap-on-optimistic-ethereum-oξ',
     nativeCurrency: { name: 'Optimistic Kovan Ether', symbol: 'kovOpETH', decimals: 18 },
   },
   [SupportedChainId.ARBITRUM_ONE]: {
@@ -129,7 +136,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     label: 'Arbitrum',
     logoUrl: arbitrumLogoUrl,
     defaultListUrl: ARBITRUM_LIST,
-    helpCenterUrl: 'https://help.uniswap.org/en/collections/3137787-uniswap-on-arbitrum',
+    helpCenterUrl: 'https://help.doughnutswap.shop/en/collections/3137787-doughnutswap-on-arbitrum',
     nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
   },
   [SupportedChainId.ARBITRUM_RINKEBY]: {
@@ -142,7 +149,7 @@ export const CHAIN_INFO: ChainInfoMap = {
     label: 'Arbitrum Rinkeby',
     logoUrl: arbitrumLogoUrl,
     defaultListUrl: ARBITRUM_LIST,
-    helpCenterUrl: 'https://help.uniswap.org/en/collections/3137787-uniswap-on-arbitrum',
+    helpCenterUrl: 'https://help.doughnutswap.shop/en/collections/3137787-doughnutswap-on-arbitrum',
     nativeCurrency: { name: 'Rinkeby Arbitrum Ether', symbol: 'rinkArbETH', decimals: 18 },
   },
   [SupportedChainId.POLYGON]: {
@@ -166,5 +173,49 @@ export const CHAIN_INFO: ChainInfoMap = {
     label: 'Polygon Mumbai',
     logoUrl: polygonMaticLogo,
     nativeCurrency: { name: 'Polygon Mumbai Matic', symbol: 'mMATIC', decimals: 18 },
+  },
+  [SupportedChainId.HARMONY]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://bridge.harmony.one/',
+    docs: 'https://docs.harmony.one/',
+    explorer: 'https://explorer.harmony.one',
+    infoLink: 'https://info.doughnutswap.shop/#/harmony/',
+    label: 'Harmony',
+    logoUrl: harmonyLogoUrl,
+    nativeCurrency: { name: 'Harmony', symbol: 'One', decimals: 18 },
+  },
+  [SupportedChainId.BINANCE]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://www.binance.org/en/bridge',
+    docs: 'https://docs.binance.org/',
+    explorer: 'https://www.bscscan.com/',
+    infoLink: 'https://info.doughnutswap.shop/#/binance/',
+    label: 'Binance',
+    logoUrl: binanceLogoUrl,
+    nativeCurrency: { name: 'Binance', symbol: 'BNB', decimals: 18 },
+  },
+  [SupportedChainId.THUNDERCORE]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://github.com/thundercore/thunder_bridge',
+    docs: 'https://docs.developers.thundercore.com/',
+    explorer: 'https://ftmscan.com/',
+    infoLink: 'https://info.doughnutsswap.shop/#/thundercore/',
+    label: 'ThunderCore',
+    logoUrl: thundercoreTTLogoUrl,
+    nativeCurrency: { name: 'ThunderCore Thunder Token', symbol: 'TT', decimals: 18 },
+  },
+  [SupportedChainId.FANTOM]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'xPollinate: https://xpollinate.io/',
+    docs: 'Fantom: Developer Documentationhttps://docs.fantom.foundation',
+    explorer: 'https://ftmscan.com/',
+    infoLink: 'https://info.doughnutsswap.shop/#/fantom/',
+    label: 'Fantom',
+    logoUrl: fantomLogoUrl,
+    nativeCurrency: { name: 'ThunderCore Thunder Token', symbol: 'TT', decimals: 18 },
   },
 }

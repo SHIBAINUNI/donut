@@ -1,8 +1,8 @@
 {
   "background_color": "#fff",
   "display": "standalone",
-  "homepage_url": "https://app.doughnutswap.org",
-  "providedBy": { "name": "Doughnutswap", "url": "https://doughnutswap.org" },
+  "homepage_url": "https://app.doughnutswap.shop",
+  "providedBy": { "name": "Doughnutswap", "url": "https://doughnutswap.shop" },
   "icons": [
     {
       "src": "./images/192x192_App_Icon.png",

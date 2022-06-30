@@ -21,7 +21,7 @@
   "name": "Doughnutswap",
   "description": "Swap, trade, stake, or provide liquidity on the jelly pool Doughnutswap Protocol",
   "iconPath": "./images/256x256_App_Icon_Pink.svg",
-  "short_name": "Uniswap",
+  "short_name": "Doughnutswap",
   "start_url": ".",
   "theme_color": "#ff007a"
 }
